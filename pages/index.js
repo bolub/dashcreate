@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import Navbar from '../Components/Navbar';
-import Phase from '../Components/Phase';
-import TextWithIcon from '../Components/TextWithIcon';
+import Navbar from '../components/Navbar';
+import Phase from '../components/Phase';
+import TextWithIcon from '../components/TextWithIcon';
 import { Instructors } from '../data';
 
 export default function Home() {
@@ -193,7 +193,7 @@ export default function Home() {
 
               <Phase
                 title='😠 The Frustration Phase'
-                description='Usually when a designer starts from in the manner outlined, he procastinates a lot, works very little and He’s confident in himself, but deep down you keep searching for ways you can actually “make it" as a designer, but slowly you begin to discover, logo design is just another thing just anybody can make within 5 minutes.'
+                description='Usually when a designer starts in the manner outlined, he procastinates a lot, works very little and He’s confident in himself, but deep down you keep searching for ways you can actually “make it" as a designer, but slowly you begin to discover, logo design is just another thing just anybody can make within 5 minutes.'
               />
 
               <Phase
@@ -254,7 +254,7 @@ export default function Home() {
 
                 <div className='mb-8' id='instructors'>
                   <p className='text-xl font-bold text-purple-500 mb-6 '>
-                    Our Instructors
+                    Our Classes and Instructors
                   </p>
 
                   <p className='mb-10'>
