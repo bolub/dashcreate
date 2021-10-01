@@ -120,7 +120,7 @@ const Navbar = () => {
               <div className='mb-8' onClick={() => setIsOpen(false)}>
                 <a
                   href='#instructors'
-                  className='cursor-pointer text-gray-600 font-medium text-xl hover:text-purple-500'
+                  className='cursor-pointer text-gray-600 font-medium  hover:text-purple-500'
                 >
                   👨‍🏫 &nbsp; Instructors
                 </a>
@@ -129,7 +129,7 @@ const Navbar = () => {
               <div className='mb-8' onClick={() => setIsOpen(false)}>
                 <a
                   href='#whatYouLearn'
-                  className='cursor-pointer text-gray-600 font-medium text-xl hover:text-purple-500'
+                  className='cursor-pointer text-gray-600 font-medium  hover:text-purple-500'
                 >
                   📚 &nbsp; What You'll Learn
                 </a>

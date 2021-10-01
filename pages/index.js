@@ -16,6 +16,14 @@ export default function Home() {
       <Head>
         <title>Brand Identity Camp 1.0 - Dashcreate</title>
         {/* <link rel='icon' href='/favicon.ico' /> */}
+        <meta
+          name='description'
+          content='Brand Identity camp is an initiative to help young and aspiring
+            graphic designers learn how to make stunning brand Identity designs
+            that they see foreign studios make. It’s particularly geared towards
+            African students, but we have a little bit of room for international
+            persons and also Africans in the working class'
+        ></meta>
       </Head>
 
       <Navbar />
@@ -325,10 +333,10 @@ export default function Home() {
             Register now
           </button>
 
-          <img
+          {/* <img
             src='https://res.cloudinary.com/yeswecancreate/image/upload/v1633078428/Bidc_1.2cArtboard_1_copy_2x_uevkyh.png'
             className='mt-5'
-          />
+          /> */}
         </section>
       </main>
 
