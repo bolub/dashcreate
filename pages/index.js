@@ -214,7 +214,10 @@ export default function Home() {
                 What is Brand Identity design Camp 1.0?
               </p>
 
-              <div className='text-gray-600 leading-loose mt-5'>
+              <div
+                id='whatYouLearn'
+                className='text-gray-600 leading-loose mt-5'
+              >
                 <p className='mb-8'>
                   Brand Identity design Camp 1.0, is that camp that gives you
                   all the training that you need to become a successful brand
@@ -228,7 +231,7 @@ export default function Home() {
                 </p>
 
                 <div className='mb-12'>
-                  <p className='mb-2'>You'll learn:</p>
+                  <p className='mb-2 font-bold'>You'll learn:</p>
 
                   <div class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
                     <div className='border rounded-md px-4 py-5 text-center border-gray.500 flex justify-center items-center'>
@@ -249,7 +252,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className='mb-8'>
+                <div className='mb-8' id='instructors'>
                   <p class='mb-10'>
                     Our Classes are packed with essential training, experiences
                     and inspiration as though that’s not enough, you get to add
