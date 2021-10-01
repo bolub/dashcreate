@@ -33,8 +33,8 @@ const Navbar = () => {
         <span style={{ color: 'rgba(245, 158, 11' }}>Create</span>
       </span>
 
-      {/* right nav hidden md:flex*/}
-      <div className='ml-auto my-auto '>
+      {/* right nav */}
+      <div className='ml-auto my-auto hidden md:flex'>
         <a
           href='#instructors'
           className='my-auto cursor-pointer text-gray-600 font-medium hover:text-purple-500 mr-6'
@@ -59,7 +59,7 @@ const Navbar = () => {
         )}
       </div>
 
-      {/* <div className='ml-auto my-auto block md:hidden'>
+      <div className='ml-auto my-auto block md:hidden'>
         <button
           ref={completeButtonRef}
           className='border p-1 rounded-sm'
@@ -80,7 +80,7 @@ const Navbar = () => {
             />
           </svg>
         </button>
-      </div> */}
+      </div>
 
       <Transition
         show={isOpen}
