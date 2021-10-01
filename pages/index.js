@@ -24,10 +24,18 @@ export default function Home() {
             African students, but we have a little bit of room for international
             persons and also Africans in the working class'
         />
-        <meta property="og:image" content="https://wallpapercave.com/w/wp4471357"/>
-<meta property="og:image:type" content="image/jpg"/>
-<meta property="og:image:width" content="1024"/>
-<meta property="og:image:height" content="1024"/>
+
+<meta property="og:title" content="Brand Identity Camp 1.0 - Dashcreate"/>
+<meta property="og:site_name" content="Dashcreate"/>
+<meta property="og:url" content="https://www.dashcreate.design/"/>
+<meta property="og:description" content="Brand Identity camp is an initiative to help young and aspiring
+            graphic designers learn how to make stunning brand Identity designs
+            that they see foreign studios make. It’s particularly geared towards
+            African students, but we have a little bit of room for international
+            persons and also Africans in the working class"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://wallpapercave.com/wp/wp4471362.jpg"/>
+
 
       </Head>
 
