@@ -43,13 +43,13 @@ const Navbar = () => {
         </a>
         <a
           href='#whatYouLearn'
-          className='my-auto ml-6 cursor-pointer text-gray-600 font-medium hover:text-purple-500'
+          className='my-auto cursor-pointer text-gray-600 font-medium hover:text-purple-500'
         >
           What You'll Learn
         </a>
         {scrollY > 300 && (
           <button
-            className='transition duration-100 border-purple-500 border border-transparent text-purple-500 py-3 px-4
+            className='ml-6 transition duration-100 border-purple-500 border border-transparent text-purple-500 py-3 px-4
             
             rounded-sm font-semibold '
             onClick={() => openLink('https://Bit.ly/bidc1')}
@@ -67,7 +67,7 @@ const Navbar = () => {
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'
-            class='h-6 w-6'
+            className='h-6 w-6'
             fill='none'
             viewBox='0 0 24 24'
             stroke='currentColor'

@@ -233,7 +233,7 @@ export default function Home() {
                 <div className='mb-20'>
                   <p className='mb-2 font-bold'>You'll learn:</p>
 
-                  <div class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
+                  <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
                     <div className='border rounded-md px-4 py-5 text-center border-gray.500 flex justify-center items-center'>
                       Design Thinking
                     </div>
@@ -257,7 +257,7 @@ export default function Home() {
                     Our Instructors
                   </p>
 
-                  <p class='mb-10'>
+                  <p className='mb-10'>
                     Our Classes are packed with essential training, experiences
                     and inspiration as though that’s not enough, you get to add
                     experiences of industry pros in the same Nigeria and beyond,
@@ -265,7 +265,7 @@ export default function Home() {
                     emerged victorious and are now Internationally known:
                   </p>
 
-                  <div class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
+                  <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
                     {Instructors.map((instrData) => {
                       return (
                         <div key={instrData.name} className='mb-6'>
@@ -327,7 +327,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer class='mb-4'>
+      <footer className='mb-4'>
         <p className='text-gray-400 text-xs text-center'>
           &copy; Copyright Dashcreate {new Date().getFullYear()}
         </p>
