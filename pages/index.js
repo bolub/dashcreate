@@ -318,8 +318,9 @@ export default function Home() {
         </section>
 
         <section
-          className='px-5 md:px-16 text-center flex mt-16 flex-col bg-purple-500 text-white py-20 justify-center items-center'
+          className='px-5 md:px-16 text-center flex mt-16 flex-col  text-white py-56 bg-purple-500 justify-center items-center'
           id='callToAction'
+          style={{background: 'url(./Illustration.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}
         >
           <h2 className='font-black text-2xl md:text-3xl mb-4'>
             Ready to Start Brand Identity Camp 1.0?
@@ -334,7 +335,7 @@ export default function Home() {
           </button>
 
           {/* <img
-            src='https://res.cloudinary.com/yeswecancreate/image/upload/v1633078428/Bidc_1.2cArtboard_1_copy_2x_uevkyh.png'
+           src='Illustration.jpg'
             className='mt-5'
           /> */}
         </section>
