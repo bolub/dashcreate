@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar.js';
 import Phase from '../components/Phase';
 import TextWithIcon from '../components/TextWithIcon';
 import { Instructors } from '../data';
