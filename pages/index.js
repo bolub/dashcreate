@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import Navbar from '../components/Navbar.js';
-import Phase from '../components/Phase';
-import TextWithIcon from '../components/TextWithIcon';
+import Navbar from '../Components/Navbar.js';
+import Phase from '../Components/Phase';
+import TextWithIcon from '../Components/TextWithIcon';
 import { Instructors } from '../data';
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
             Brand Identity Camp 1.0
           </h1>
 
-          <p className='mt-6 text-gray-600 leading-6'>
+          <p className='mt-6 text-gray-600 leading-loose'>
             Brand Identity camp is an initiative to help young and aspiring
             graphic designers learn how to make stunning brand Identity designs
             that they see foreign studios make. It’s particularly geared towards
@@ -181,7 +181,7 @@ export default function Home() {
               <Phase
                 title='🤩 The Excitement Phase'
                 description=' You’ve just seen a youtube video on how much it cost Pepsi to
-              design their new logo and you realise “men!, I can make millions
+              design their new logo and you realise “damn!, I can make millions
               of dollars just in a couple of minutes, I want to become a logo
               designer!"'
               />
@@ -265,13 +265,13 @@ export default function Home() {
                     emerged victorious and are now Internationally known:
                   </p>
 
-                  <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
+                  <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5'>
                     {Instructors.map((instrData) => {
                       return (
                         <div key={instrData.name} className='mb-6'>
                           <img
                             src={instrData.imageUrl}
-                            className='mb-3 object-cover w-full h-64 rounded border'
+                            className='mb-3 object-cover w-full h-72 rounded border'
                           />
 
                           <div
@@ -324,12 +324,17 @@ export default function Home() {
           >
             Register now
           </button>
+
+          <img
+            src='https://res.cloudinary.com/yeswecancreate/image/upload/v1633078428/Bidc_1.2cArtboard_1_copy_2x_uevkyh.png'
+            className='mt-5'
+          />
         </section>
       </main>
 
       <footer className='mb-4'>
         <p className='text-gray-400 text-xs text-center'>
-          &copy; Copyright Dashcreate {new Date().getFullYear()}
+          &copy; Copyright DashCreate {new Date().getFullYear()}
         </p>
       </footer>
     </>
