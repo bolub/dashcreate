@@ -33,16 +33,17 @@ const Navbar = () => {
         <span style={{ color: 'rgba(245, 158, 11' }}>Create</span>
       </span>
 
-      <div className='ml-auto my-auto hidden md:block'>
+      {/* right nav */}
+      <div className='ml-auto my-auto hidden md:flex'>
         <a
           href='#instructors'
-          className='mr-6 cursor-pointer text-gray-600 font-medium hover:text-purple-500'
+          className='my-auto cursor-pointer text-gray-600 font-medium hover:text-purple-500'
         >
           Instructors
         </a>
         <a
           href='#whatYouLearn'
-          className=' cursor-pointer text-gray-600 font-medium hover:text-purple-500'
+          className='my-auto ml-6 cursor-pointer text-gray-600 font-medium hover:text-purple-500'
         >
           What You'll Learn
         </a>
