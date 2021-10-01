@@ -5,3 +5,7 @@
 body {
   font-family: 'Kumbh sans';
 }
+
+html {
+  scroll-behavior: smooth;
+}

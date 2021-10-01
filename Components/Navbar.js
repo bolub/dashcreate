@@ -73,7 +73,7 @@ const Navbar = () => {
             stroke='currentColor'
           >
             <path
-              strokelineCap='round'
+              strokeLinecap='round'
               strokeLinejoin='round'
               strokeWidth='2'
               d='M4 6h16M4 12h16M4 18h16'
@@ -100,11 +100,27 @@ const Navbar = () => {
           <div className='flex flex-col  items-center justify-center min-h-screen'>
             <Dialog.Overlay className='fixed inset-0 bg-black opacity-30' />
 
-            <div className='flex flex-col justify-center items-center text-center relative bg-white p-5 h-96 rounded w-full mx-auto'>
+            <div className='flex flex-col justify-center items-center text-center relative bg-white px-5 py-28 rounded w-full mx-auto'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                class='h-6 w-6 mb-10 absolute right-6 top-6 cursor-pointer'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
+                onClick={() => setIsOpen(false)}
+              >
+                <path
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  stroke-width='2'
+                  d='M6 18L18 6M6 6l12 12'
+                />
+              </svg>
+
               <div className='mb-8' onClick={() => setIsOpen(false)}>
                 <a
                   href='#instructors'
-                  className='cursor-pointer text-gray-600 font-medium hover:text-purple-500'
+                  className='cursor-pointer text-gray-600 font-medium text-xl hover:text-purple-500'
                 >
                   👨‍🏫 &nbsp; Instructors
                 </a>
@@ -113,7 +129,7 @@ const Navbar = () => {
               <div className='mb-8' onClick={() => setIsOpen(false)}>
                 <a
                   href='#whatYouLearn'
-                  className='cursor-pointer text-gray-600 font-medium hover:text-purple-500'
+                  className='cursor-pointer text-gray-600 font-medium text-xl hover:text-purple-500'
                 >
                   📚 &nbsp; What You'll Learn
                 </a>
