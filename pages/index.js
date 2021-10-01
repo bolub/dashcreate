@@ -23,7 +23,12 @@ export default function Home() {
             that they see foreign studios make. It’s particularly geared towards
             African students, but we have a little bit of room for international
             persons and also Africans in the working class'
-        ></meta>
+        />
+        <meta property="og:image" content=".Illustration.jpg"/>
+<meta property="og:image:type" content="image/jpg"/>
+<meta property="og:image:width" content="1024"/>
+<meta property="og:image:height" content="1024"/>
+
       </Head>
 
       <Navbar />
