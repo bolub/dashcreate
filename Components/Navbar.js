@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import { Dialog, Transition } from '@headlessui/react';
 
 const Navbar = () => {
   const openLink = (url) => {
@@ -21,6 +22,9 @@ const Navbar = () => {
     };
   }, []);
 
+  let [isOpen, setIsOpen] = useState(false);
+  let completeButtonRef = useRef(null);
+
   return (
     <nav className='px-5 md:px-16 mt-5 py-6 sticky top-0 flex bg-white'>
       <span id='logo' className='font-bold text-2xl my-auto mr-5'>
@@ -29,7 +33,7 @@ const Navbar = () => {
         <span style={{ color: 'rgba(245, 158, 11' }}>Create</span>
       </span>
 
-      <div className='ml-auto my-auto'>
+      <div className='ml-auto my-auto hidden md:block'>
         <a
           href='#instructors'
           className='mr-6 cursor-pointer text-gray-600 font-medium hover:text-purple-500'
@@ -53,6 +57,79 @@ const Navbar = () => {
           </button>
         )}
       </div>
+
+      <div className='ml-auto my-auto block md:hidden'>
+        <button
+          ref={completeButtonRef}
+          className='border p-1 rounded-sm'
+          onClick={() => setIsOpen(true)}
+        >
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            class='h-6 w-6'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke='currentColor'
+          >
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              stroke-width='2'
+              d='M4 6h16M4 12h16M4 18h16'
+            />
+          </svg>
+        </button>
+      </div>
+
+      <Transition
+        show={isOpen}
+        enter='transition duration-100 ease-out'
+        enterFrom='transform scale-95 opacity-0'
+        enterTo='transform scale-100 opacity-100'
+        leave='transition duration-75 ease-out'
+        leaveFrom='transform scale-100 opacity-100'
+        leaveTo='transform scale-95 opacity-0'
+      >
+        <Dialog
+          open={isOpen}
+          onClose={() => setIsOpen(false)}
+          initialFocus={completeButtonRef}
+          className='fixed z-10 inset-0 overflow-y-auto'
+        >
+          <div className='flex flex-col  items-center justify-center min-h-screen'>
+            <Dialog.Overlay className='fixed inset-0 bg-black opacity-30' />
+
+            <div className='flex flex-col justify-center items-center text-center relative bg-white p-5 h-96 rounded w-full mx-auto'>
+              <div className='mb-8' onClick={() => setIsOpen(false)}>
+                <a
+                  href='#instructors'
+                  className='cursor-pointer text-gray-600 font-medium hover:text-purple-500'
+                >
+                  👨‍🏫 &nbsp; Instructors
+                </a>
+              </div>
+
+              <div className='mb-8' onClick={() => setIsOpen(false)}>
+                <a
+                  href='#whatYouLearn'
+                  className='cursor-pointer text-gray-600 font-medium hover:text-purple-500'
+                >
+                  📚 &nbsp; What You'll Learn
+                </a>
+              </div>
+
+              <button
+                className='mb-8 transition duration-100 border-purple-500 border border-transparent text-purple-500 py-3 px-4
+            
+            rounded-sm font-semibold '
+                onClick={() => openLink('https://Bit.ly/bidc1')}
+              >
+                Register now
+              </button>
+            </div>
+          </div>
+        </Dialog>
+      </Transition>
     </nav>
   );
 };

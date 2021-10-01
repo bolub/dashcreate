@@ -153,7 +153,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className='mt-32 mb-10'>
+      <main className='mt-32 mb-4'>
         <section className='px-5 md:px-16 flex flex-col' id='about'>
           <p className='text-center mb-1 text-gray-600 text-sm font-medium'>
             Wondering...
@@ -162,7 +162,7 @@ export default function Home() {
             What the hell is Brand Identity Design Camp 1.0?
           </h2>
 
-          <div className='mt-8 m-auto' style={{ maxWidth: '800px' }}>
+          <div className='mt-8 m-auto' style={{ maxWidth: '850px' }}>
             {/* First */}
             <p className='text-gray-600 leading-loose'>
               Actually it’s the same answer to the question “why does my logo
@@ -202,7 +202,7 @@ export default function Home() {
               />
             </div>
 
-            <p className='text-gray-600 leading-loose mt-10'>
+            <p className='text-gray-600 leading-loose mt-8'>
               The truth is the country does not have a problem, graphic design
               does not have a problem. You have a problem, and It’s time to get
               that problem solved, with the amount you likely spend almost
@@ -230,7 +230,7 @@ export default function Home() {
                   ideas, flesh those ideas out using industry standard tools.
                 </p>
 
-                <div className='mb-12'>
+                <div className='mb-20'>
                   <p className='mb-2 font-bold'>You'll learn:</p>
 
                   <div class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
@@ -253,6 +253,10 @@ export default function Home() {
                 </div>
 
                 <div className='mb-8' id='instructors'>
+                  <p className='text-xl font-bold text-purple-500 mb-6 '>
+                    Our Instructors
+                  </p>
+
                   <p class='mb-10'>
                     Our Classes are packed with essential training, experiences
                     and inspiration as though that’s not enough, you get to add
@@ -291,7 +295,7 @@ export default function Home() {
                             </svg>
                           </div>
 
-                          <p className='text-sm'>{instrData.title}</p>
+                          <p className='text-md'>{instrData.title}</p>
                         </div>
                       );
                     })}
