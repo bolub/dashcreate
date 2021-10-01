@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Head>
         <title>Brand Identity Camp 1.0 - Dashcreate</title>
-        <link rel='icon' href='/favicon.ico' />
+        {/* <link rel='icon' href='/favicon.ico' /> */}
       </Head>
 
       <Navbar />
