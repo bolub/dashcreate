@@ -21,17 +21,15 @@ const Navbar = () => {
     };
   }, []);
 
-  console.log(scrollY);
-
   return (
-    <nav className='px-10 mt-5 py-6 sticky top-0 flex bg-white'>
+    <nav className='px-5 md:px-16 mt-5 py-6 sticky top-0 flex bg-white'>
       <span id='logo' className='font-extrabold text-2xl my-auto'>
         <span className='text-purple-500'>Dash</span>
 
         <span className='text-yellow-500'>Create</span>
       </span>
 
-      {scrollY > 400 && (
+      {scrollY > 300 && (
         <button
           className='transition duration-100 border-purple-500 border border-transparent text-purple-500 py-3 px-4
             
