@@ -27,7 +27,7 @@ export default function Home() {
             Brand Identity Camp 1.0
           </h1>
 
-          <p className='mt-6 text-gray-600'>
+          <p className='mt-6 text-gray-600 leading-6'>
             Brand Identity camp is an initiative to help young and aspiring
             graphic designers learn how to make stunning brand Identity designs
             that they see foreign studios make. It’s particularly geared towards
@@ -269,7 +269,10 @@ export default function Home() {
                     {Instructors.map((instrData) => {
                       return (
                         <div key={instrData.name} className='mb-6'>
-                          <img className='mb-3 object-cover w-full h-48 rounded border' />
+                          <img
+                            src={instrData.imageUrl}
+                            className='mb-3 object-cover w-full h-64 rounded border'
+                          />
 
                           <div
                             onClick={() => openLink(instrData.portfolioUrl)}
