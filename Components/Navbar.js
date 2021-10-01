@@ -37,7 +37,7 @@ const Navbar = () => {
       <div className='ml-auto my-auto '>
         <a
           href='#instructors'
-          className='my-auto cursor-pointer text-gray-600 font-medium hover:text-purple-500'
+          className='my-auto cursor-pointer text-gray-600 font-medium hover:text-purple-500 mr-6'
         >
           Instructors
         </a>
@@ -49,7 +49,7 @@ const Navbar = () => {
         </a>
         {scrollY > 300 && (
           <button
-            className='ml-6 transition duration-100 border-purple-500 border border-transparent text-purple-500 py-3 px-4
+            className='transition duration-100 border-purple-500 border border-transparent text-purple-500 py-3 px-4
             
             rounded-sm font-semibold '
             onClick={() => openLink('https://Bit.ly/bidc1')}
