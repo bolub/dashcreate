@@ -19,24 +19,31 @@ export default function Home() {
         <meta
           name='description'
           content='Brand Identity camp is an initiative to help young and aspiring
-            graphic designers learn how to make stunning brand Identity designs
+            graphic designers learn how to make stunning brand identity designs
             that they see foreign studios make. It’s particularly geared towards
             African students, but we have a little bit of room for international
             persons and also Africans in the working class'
         />
 
-<meta property="og:title" content="Brand Identity Camp 1.0 - Dashcreate"/>
-<meta property="og:site_name" content="Dashcreate"/>
-<meta property="og:url" content="https://www.dashcreate.design/"/>
-<meta property="og:description" content="Brand Identity camp is an initiative to help young and aspiring
+        <meta
+          property='og:title'
+          content='Brand Identity Camp 1.0 - Dashcreate'
+        />
+        <meta property='og:site_name' content='Dashcreate' />
+        <meta property='og:url' content='https://www.dashcreate.design/' />
+        <meta
+          property='og:description'
+          content='Brand Identity camp is an initiative to help young and aspiring
             graphic designers learn how to make stunning brand Identity designs
             that they see foreign studios make. It’s particularly geared towards
             African students, but we have a little bit of room for international
-            persons and also Africans in the working class"/>
-<meta property="og:type" content="website"/>
-<meta property="og:image" content="https://wallpapercave.com/wp/wp4471362.jpg"/>
-
-
+            persons and also Africans in the working class'
+        />
+        <meta property='og:type' content='website' />
+        <meta
+          property='og:image'
+          content='https://wallpapercave.com/wp/wp4471362.jpg'
+        />
       </Head>
 
       <Navbar />
@@ -68,7 +75,7 @@ export default function Home() {
 
             <a href='#about'>
               <button
-                className='transition duration-100 hover:border-purple-500 border border-transparent text-purple-500 ml-3 py-3 px-4
+                className='transition duration-100 hover:bg-purple-500 hover:text-white border border-purple-500 text-purple-500 ml-3 py-3 px-4
             
             rounded-sm font-semibold'
               >
@@ -166,7 +173,7 @@ export default function Home() {
                 />
 
                 <span className='font-bold ml-auto my-auto'>
-                  Oct 18 - November 1
+                  To be Announced
                 </span>
               </div>
             </div>
@@ -201,20 +208,19 @@ export default function Home() {
               {/* Phases */}
               <Phase
                 title='🤩 The Excitement Phase'
-                description=' You’ve just seen a youtube video on how much it cost Pepsi to
-              design their new logo and you realise “damn!, I can make millions
-              of dollars just in a couple of minutes, I want to become a logo
+                description=' You’ve just seen a Youtube video on how much it cost Pepsi to
+              design their new logo and you realise “damn! I can make millions in a couple of minutes, I want to become a logo
               designer!"'
               />
 
               <Phase
                 title='📚 The Onboarding Phase'
-                description='You watch a couple of tutorials on how to make some cool logo designs  on coreldraw usually this stage is followed alongside with Dunning Kruger effect (ya know... that pride that you know something but infact ya actually don’t). You say to yourself “you know what… I’ma actually slap a logo designer title on my bio on whatsapp, facebook and instagram. I am now ready for commisions". Unfortunately for you, you also saw some of the videos that tell you to charge high for your works.'
+                description='You watch a couple of tutorials on how to make some cool logo designs  on Coreldraw,  usually this stage is followed alongside with a Dunning Kruger effect (ya know... that pride that you know something but infact ya actually don’t). You say to yourself “you know what… I’ll actually slap a logo designer title on my bio on whatsapp, facebook and instagram. I am now ready for commisions". Unfortunately for you, you also saw some of the videos that tell you to charge high for your works.'
               />
 
               <Phase
                 title='😠 The Frustration Phase'
-                description='Usually when a designer starts in the manner outlined, he procastinates a lot, works very little and He’s confident in himself, but deep down you keep searching for ways you can actually “make it" as a designer, but slowly you begin to discover, logo design is just another thing just anybody can make within 5 minutes.'
+                description='Usually designers start in the manner outlined, they procastinates a lot, works very little and He’s confident in themselves, but deep down they keep searching for ways they can actually “make it" as a designer. But they slowly begin to discover, logo design is just another thing just anybody can make within 5 minutes.'
               />
 
               <Phase
@@ -225,9 +231,9 @@ export default function Home() {
 
             <p className='text-gray-600 leading-loose mt-8'>
               The truth is the country does not have a problem, graphic design
-              does not have a problem. You have a problem, and It’s time to get
-              that problem solved, with the amount you likely spend almost
-              weekly on food and the likes. Now to the question...
+              does not have a problem. You have a problem, and Its time to get
+              that problem solved, with a small token you probably spend on a
+              single hangout. Now to the question...
             </p>
 
             <div className='mt-16'>
@@ -240,15 +246,16 @@ export default function Home() {
                 className='text-gray-600 leading-loose mt-5'
               >
                 <p className='mb-8'>
-                  Brand Identity design Camp 1.0, is that camp that gives you
-                  all the training that you need to become a successful brand
+                  Brand Identity design Camp 1.0 is that camp that gives you all
+                  the training that you need to become a successful brand
                   identity designer.
                 </p>
 
                 <p className='mb-8'>
                   It’s a two week intense training on how to use tested and
                   proven method to generate awesome and original logo design
-                  ideas, flesh those ideas out using industry standard tools.
+                  ideas, and flesh those ideas out using industry standard
+                  tools.
                 </p>
 
                 <div className='mb-20'>
@@ -279,11 +286,12 @@ export default function Home() {
                   </p>
 
                   <p className='mb-10'>
-                    Our Classes are packed with essential training, experiences
-                    and inspiration as though that’s not enough, you get to add
-                    experiences of industry pros in the same Nigeria and beyond,
-                    those who have fought through the I-give-up phase and have
-                    emerged victorious and are now Internationally known:
+                    Our classes are packed with essential training, experience,
+                    and inspiration. As though that’s not enough, you get to add
+                    experiences of industry pros in this same Nigeria and
+                    beyond, those who have fought through the I-give-up phase
+                    and have emerged victorious and are now internationally
+                    known:
                   </p>
 
                   <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5'>
@@ -333,7 +341,11 @@ export default function Home() {
         <section
           className='px-5 md:px-16 text-center flex mt-16 flex-col  text-white py-56 bg-purple-500 justify-center items-center'
           id='callToAction'
-          style={{background: 'url(./Illustration.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}
+          style={{
+            background: 'url(./Illustration.jpg)',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+          }}
         >
           <h2 className='font-black text-2xl md:text-3xl mb-4'>
             Ready to Start Brand Identity Camp 1.0?
