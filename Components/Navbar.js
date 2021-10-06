@@ -26,13 +26,20 @@ const Navbar = () => {
   let completeButtonRef = useRef(null);
 
   return (
-    <nav className=' px-5 md:px-16 mt-5 py-6 sticky top-0 flex bg-white' style={{maxHeight:'100px'}}>
+    <nav
+      className=' px-5 md:px-16 mt-5 py-6 sticky top-0 flex bg-white'
+      style={{ maxHeight: '100px' }}
+    >
       <span id='logo' className='font-bold text-2xl my-auto mr-5'>
-      {/* <img src='./../DashcreateLogo.svg' className='h-auto w-44 h-44 absolute -left-8 md:left-4' style={{top: '-40px'}}/>
-       */}
-        <span className='text-purple-500'>Dash</span>
+        <img
+          src='./../DashcreateLogo.svg'
+          className='h-auto w-44 h-44 absolute -left-8 md:left-4'
+          style={{ top: '-40px' }}
+        />
 
-        <span style={{ color: 'rgba(245, 158, 11' }}>Create</span>
+        {/* <span className='text-purple-500'>Dash</span>
+
+        <span style={{ color: 'rgba(245, 158, 11' }}>Create</span> */}
       </span>
 
       {/* right nav */}
