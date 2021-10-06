@@ -58,8 +58,8 @@ const Navbar = () => {
         </a>
         {scrollY > 300 && (
           <button
-            className='ml-6 transition duration-100 border-purple-500 border border-transparent text-purple-500 py-3 px-4
-            
+            className='ml-6 transition duration-100 border border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white py-3 px-4
+             
             rounded-sm font-semibold '
             onClick={() => openLink('https://Bit.ly/bidc1')}
           >
@@ -145,7 +145,7 @@ const Navbar = () => {
               </div>
 
               <button
-                className='mb-8 transition duration-100 border-purple-500 border border-transparent text-purple-500 py-3 px-4
+                className='mb-8 transition duration-100 border border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white py-3 px-4
             
             rounded-sm font-semibold '
                 onClick={() => openLink('https://Bit.ly/bidc1')}

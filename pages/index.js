@@ -63,9 +63,9 @@ export default function Home() {
             persons and also Africans in the working class
           </p>
 
-          <div className='flex mt-14'>
+          <div className='flex flex-col md:flex-row mt-14'>
             <button
-              className='transition duration-100 bg-purple-500 text-white py-3 px-4
+              className='transition w-full md:w-auto duration-100 bg-purple-500 text-white py-3 px-4
             
             rounded-sm font-semibold'
               onClick={() => openLink('https://Bit.ly/bidc1')}
@@ -75,7 +75,7 @@ export default function Home() {
 
             <a href='#about'>
               <button
-                className='transition duration-100 hover:bg-purple-500 hover:text-white border border-purple-500 text-purple-500 ml-3 py-3 px-4
+                className='transition w-full md:w-auto duration-100 hover:bg-purple-500 hover:text-white border border-purple-500 text-purple-500 mt-3 md:mt-0 md:ml-3 py-3 px-4
             
             rounded-sm font-semibold'
               >
