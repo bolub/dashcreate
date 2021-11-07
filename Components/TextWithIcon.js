@@ -4,7 +4,7 @@ const TextWithIcon = ({ text, icon, className }) => {
   return (
     <div className={`${className} flex`}>
       <span className='my-auto '>{icon}</span>
-      <span className='my-auto ml-2'>{text}</span>
+      <span className='my-auto ml-2 text-right'>{text}</span>
     </div>
   );
 };

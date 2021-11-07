@@ -90,13 +90,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='hidden md:visible w-full md:w-2/5 my-auto'>
+        <div className='hidden md:block w-full md:w-2/5 my-auto'>
           <img src='https://res.cloudinary.com/dq6iuhnpr/image/upload/q_auto:eco/v1633957978/bidc/hero-img_cy2xna.png' />
         </div>
       </header>
 
       {/* Info */}
-      <div className='w-full md:w-2/5 mt-6 md:mt-16 px-5 md:px-16 mx-auto'>
+      <div className='w-full md:w-2/5 mt-6 md:mt-16 px-3 mx-auto'>
         <div className='rounded-md bg-purple-100 text-purple-500 py-10 md:py-16 px-5 flex flex-col'>
           <div className='md:m-auto'>
             <div className='flex flex-row md:flex-row mb-6'>
@@ -300,7 +300,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className='bg-purple-100 py-10 flex flex-col justify-center md:flex-row mt-4 mb-16'>
+                <div className='bg-purple-100 px-5 py-10 flex flex-col justify-center md:flex-row mt-4 mb-16'>
                   <button
                     className='transition w-full md:w-auto duration-100 bg-purple-500 text-white py-3 px-4 rounded-sm font-semibold'
                     onClick={() => openLink('https://Bit.ly/bidc1')}
