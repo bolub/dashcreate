@@ -245,7 +245,7 @@ export default function Home() {
               single hangout. Now to the question...
             </p>
 
-            <div className='flex flex-col justify-center md:flex-row mt-14'>
+            {/* <div className='flex flex-col justify-center md:flex-row mt-14'>
               <button
                 className='transition w-full md:w-auto duration-100 bg-purple-500 text-white py-3 px-4
 
@@ -254,7 +254,7 @@ export default function Home() {
               >
                 Register now
               </button>
-            </div>
+            </div> */}
 
             <div className='mt-16'>
               <p className='text-xl font-bold text-purple-500'>
