@@ -245,17 +245,6 @@ export default function Home() {
               single hangout. Now to the question...
             </p>
 
-            {/* <div className='flex flex-col justify-center md:flex-row mt-14'>
-              <button
-                className='transition w-full md:w-auto duration-100 bg-purple-500 text-white py-3 px-4
-
-            rounded-sm font-semibold'
-                onClick={() => openLink('https://Bit.ly/bidc1')}
-              >
-                Register now
-              </button>
-            </div> */}
-
             <div className='mt-16'>
               <p className='text-xl font-bold text-purple-500'>
                 What is Brand Identity design Camp 1.0?
