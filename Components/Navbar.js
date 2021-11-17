@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
+import { registrationExpired } from '../data';
 
 const Navbar = () => {
   const openLink = (url) => {
@@ -58,10 +59,11 @@ const Navbar = () => {
         </a>
         {scrollY > 300 && (
           <button
-            className='ml-6 transition duration-100 border border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white py-3 px-4
+            className='ml-6 transition duration-100 border border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white py-3 px-4 disabled:bg-purple-100 disabled:text-purple-400
              
             rounded-sm font-semibold '
             onClick={() => openLink('https://Bit.ly/bidc1')}
+            disabled={registrationExpired}
           >
             Register now
           </button>
@@ -147,8 +149,9 @@ const Navbar = () => {
               <button
                 className='mb-8 transition duration-100 border border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white py-3 px-4
             
-            rounded-sm font-semibold '
+            rounded-sm font-semibold disabled:bg-purple-100 disabled:text-purple-400'
                 onClick={() => openLink('https://Bit.ly/bidc1')}
+                disabled={registrationExpired}
               >
                 Register now
               </button>

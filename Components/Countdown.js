@@ -5,8 +5,8 @@ import Countdown from 'react-countdown';
 const CountWrap = ({ label, value }) => {
   return (
     <div className='text-center mr-5'>
-      <p className='font-black text-xl md:text-2xl'>{value}</p>
-      <p className='font-semibold mt-1 text-sm md:text-base text-purple-500'>
+      <p className='font-black text-2xl '>{value}</p>
+      <p className='font-bold md:font-semibold mt-1 text-sm md:text-base text-purple-500'>
         {label}
       </p>
     </div>
@@ -15,8 +15,8 @@ const CountWrap = ({ label, value }) => {
 
 const CountdownComp = ({ dateTime }) => {
   const Completionist = () => (
-    <div className='flex mt-5 bg-purple-100 justify-center py-5 font-bold text-lg text-purple-500'>
-      Event has started
+    <div className='flex mt-5 bg-purple-100 justify-center p-5 text-center font-bold text-md md:text-lg text-purple-500'>
+      Event has started and Registration has expired
     </div>
   );
 
