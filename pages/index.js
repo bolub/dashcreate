@@ -3,6 +3,7 @@ import Navbar from '../Components/Navbar.js';
 import Phase from '../Components/Phase';
 import TextWithIcon from '../Components/TextWithIcon';
 import { Instructors } from '../data';
+import { FB_PIXEL_ID } from '../fpixel.js';
 
 export default function Home() {
   const openLink = (url) => {
@@ -44,6 +45,15 @@ export default function Home() {
           property='og:image'
           content='https://wallpapercave.com/wp/wp4471362.jpg'
         />
+
+        <noscript>
+          <img
+            height='1'
+            width='1'
+            style={{ display: 'none' }}
+            src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
+          />
+        </noscript>
       </Head>
 
       <Navbar />
@@ -183,7 +193,7 @@ export default function Home() {
               />
 
               <span className='font-bold ml-auto my-auto'>
-                Nov 22nd - Dec 4
+                Nov 22nd - Dec 4th
               </span>
             </div>
           </div>
