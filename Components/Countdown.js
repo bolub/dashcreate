@@ -15,8 +15,8 @@ const CountWrap = ({ label, value }) => {
 
 const CountdownComp = ({ dateTime }) => {
   const Completionist = () => (
-    <div className='flex mt-5 bg-purple-100 justify-center py-5 font-bold text-lg text-purple-500'>
-      Event has started
+    <div className='flex mt-5 bg-purple-100 justify-center p-5 text-center font-bold text-md md:text-lg text-purple-500'>
+      Event has started and Registration has expired
     </div>
   );
 

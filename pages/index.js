@@ -3,7 +3,7 @@ import CountdownComp from '../Components/Countdown.js';
 import Navbar from '../Components/Navbar.js';
 import Phase from '../Components/Phase';
 import TextWithIcon from '../Components/TextWithIcon';
-import { Instructors } from '../data';
+import { Instructors, registrationExpired } from '../data';
 import { FB_PIXEL_ID } from '../fpixel.js';
 
 export default function Home() {
@@ -85,8 +85,9 @@ export default function Home() {
             <button
               className='transition w-full md:w-auto duration-100 bg-purple-500 text-white py-3 px-4
 
-            rounded-sm font-semibold'
+            rounded-sm font-semibold disabled:bg-purple-300 disabled:text-gray-50'
               onClick={() => openLink('https://Bit.ly/bidc1')}
+              disabled={registrationExpired}
             >
               Register now
             </button>
@@ -304,8 +305,9 @@ export default function Home() {
 
                 <div className='bg-purple-100 px-5 py-10 flex flex-col justify-center md:flex-row mt-4 mb-16'>
                   <button
-                    className='transition w-full md:w-auto duration-100 bg-purple-500 text-white py-3 px-4 rounded-sm font-semibold'
+                    className='transition w-full md:w-auto duration-100 bg-purple-500 text-white py-3 px-4 rounded-sm font-semibold disabled:bg-purple-300 disabled:text-gray-50'
                     onClick={() => openLink('https://Bit.ly/bidc1')}
+                    disabled={registrationExpired}
                   >
                     Register now
                   </button>
@@ -384,8 +386,9 @@ export default function Home() {
           <button
             className='transition duration-100 bg-white text-black py-3 px-4
 
-            rounded-sm font-semibold'
+            rounded-sm font-semibold disabled:bg-gray-200 disabled:text-gray-500'
             onClick={() => openLink('https://Bit.ly/bidc1')}
+            disabled={registrationExpired}
           >
             Register now
           </button>
