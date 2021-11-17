@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import CountdownComp from '../Components/Countdown.js';
 import Navbar from '../Components/Navbar.js';
 import Phase from '../Components/Phase';
 import TextWithIcon from '../Components/TextWithIcon';
@@ -58,7 +59,9 @@ export default function Home() {
 
       <Navbar />
 
-      <header className='px-5 md:px-16 flex flex-col md:flex-row mt-16 md:mt-24 md:py-10'>
+      <CountdownComp dateTime={'22 November, 2021'} />
+
+      <header className='px-5 md:px-16 flex flex-col md:flex-row mt-12'>
         {/* Intro */}
         <div className='w-full mb-10 md:md-0 md:w-3/5 md:pr-20 my-auto'>
           <h1
