@@ -5,8 +5,8 @@ import Countdown from 'react-countdown';
 const CountWrap = ({ label, value }) => {
   return (
     <div className='text-center mr-5'>
-      <p className='font-black text-xl md:text-2xl'>{value}</p>
-      <p className='font-semibold mt-1 text-sm md:text-base text-purple-500'>
+      <p className='font-black text-2xl '>{value}</p>
+      <p className='font-bold md:font-semibold mt-1 text-sm md:text-base text-purple-500'>
         {label}
       </p>
     </div>
