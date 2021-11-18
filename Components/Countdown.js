@@ -27,7 +27,9 @@ const CountdownComp = ({ dateTime }) => {
     } else {
       return (
         <div className='flex flex-col items-center mt-5 bg-purple-100  py-5'>
-          {/* <p className='text-sm mb-1'>Registration closes in 4 days</p> */}
+          <p className='text-xs mb-1 text-gray-600 font-bold uppercase'>
+            Registration ends in
+          </p>
 
           <div className='flex'>
             <CountWrap label='Days' value={days} />
