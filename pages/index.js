@@ -2,6 +2,7 @@ import Head from 'next/head';
 import CountdownComp from '../Components/Countdown.js';
 import Navbar from '../Components/Navbar.js';
 import Phase from '../Components/Phase';
+import Subscribe from '../Components/Subscribe.js';
 import TextWithIcon from '../Components/TextWithIcon';
 import { Instructors, registrationExpired } from '../data';
 import { FB_PIXEL_ID } from '../fpixel.js';
@@ -81,7 +82,7 @@ export default function Home() {
             persons and also Africans in the working class
           </p>
 
-          <div className='flex flex-col md:flex-row mt-14'>
+          <div className='flex flex-col md:flex-row mt-10'>
             <button
               className='transition w-full md:w-auto duration-100 bg-purple-500 text-white py-3 px-4
 
@@ -204,7 +205,7 @@ export default function Home() {
         </div>
       </div>
 
-      <main className='mt-20 mb-4 '>
+      <main className='mt-20'>
         <section className='px-5 md:px-16 flex flex-col' id='about'>
           <p className='text-center mb-1 text-gray-600 text-sm font-medium'>
             Wondering...
@@ -400,7 +401,9 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className='mb-4'>
+      {/* <Subscribe /> */}
+
+      <footer className='my-4'>
         <p className='text-gray-400 text-xs text-center'>
           &copy; Copyright DashCreate {new Date().getFullYear()}
         </p>
