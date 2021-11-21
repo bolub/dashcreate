@@ -1,7 +1,10 @@
 import Head from 'next/head';
+import { useState, useRef } from 'react';
 import CountdownComp from '../Components/Countdown.js';
+import Modal from '../Components/Modal.js';
 import Navbar from '../Components/Navbar.js';
 import Phase from '../Components/Phase';
+import Register from '../Components/Register.js';
 import Subscribe from '../Components/Subscribe.js';
 import TextWithIcon from '../Components/TextWithIcon';
 import { Instructors, registrationExpired } from '../data';
@@ -14,11 +17,13 @@ export default function Home() {
     }
   };
 
+  let [isRegisterOpen, setIsRegisterOpen] = useState(false);
+  let registerButtonRef = useRef(null);
+
   return (
     <>
       <Head>
         <title>Brand Identity Camp 1.0 - Dashcreate</title>
-        {/* <link rel='icon' href='/favicon.ico' /> */}
         <meta
           name='description'
           content='Brand Identity camp is an initiative to help young and aspiring
@@ -87,7 +92,9 @@ export default function Home() {
               className='transition w-full md:w-auto duration-100 bg-purple-500 text-white py-3 px-4
 
             rounded-sm font-semibold disabled:bg-purple-300 disabled:text-gray-50'
-              onClick={() => openLink('https://Bit.ly/bidc1')}
+              // onClick={() => openLink('https://Bit.ly/bidc1')}
+              ref={registerButtonRef}
+              onClick={() => setIsRegisterOpen(true)}
               disabled={registrationExpired}
             >
               Register now
@@ -307,7 +314,9 @@ export default function Home() {
                 <div className='bg-purple-100 px-5 py-10 flex flex-col justify-center md:flex-row mt-4 mb-16'>
                   <button
                     className='transition w-full md:w-auto duration-100 bg-purple-500 text-white py-3 px-4 rounded-sm font-semibold disabled:bg-purple-300 disabled:text-gray-50'
-                    onClick={() => openLink('https://Bit.ly/bidc1')}
+                    // onClick={() => openLink('https://Bit.ly/bidc1')}
+                    ref={registerButtonRef}
+                    onClick={() => setIsRegisterOpen(true)}
                     disabled={registrationExpired}
                   >
                     Register now
@@ -388,7 +397,9 @@ export default function Home() {
             className='transition duration-100 bg-white text-black py-3 px-4
 
             rounded-sm font-semibold disabled:bg-gray-200 disabled:text-gray-500'
-            onClick={() => openLink('https://Bit.ly/bidc1')}
+            // onClick={() => openLink('https://Bit.ly/bidc1')}
+            ref={registerButtonRef}
+            onClick={() => setIsRegisterOpen(true)}
             disabled={registrationExpired}
           >
             Register now
@@ -401,7 +412,15 @@ export default function Home() {
         </section>
       </main>
 
-      {/* <Subscribe /> */}
+      <Subscribe />
+
+      <Modal
+        isOpen={isRegisterOpen}
+        setIsOpen={setIsRegisterOpen}
+        btnRef={registerButtonRef}
+      >
+        <Register setIsRegisterOpen={setIsRegisterOpen} />
+      </Modal>
 
       <footer className='my-4'>
         <p className='text-gray-400 text-xs text-center'>

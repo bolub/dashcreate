@@ -8,19 +8,19 @@ import { useEffect } from 'react';
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
-  useEffect(() => {
-    // This pageview only triggers the first time (it's important for Pixel to have real information)
-    fbq.pageview();
+  // useEffect(() => {
+  //   // This pageview only triggers the first time (it's important for Pixel to have real information)
+  //   fbq.pageview();
 
-    const handleRouteChange = () => {
-      fbq.pageview();
-    };
+  //   const handleRouteChange = () => {
+  //     fbq.pageview();
+  //   };
 
-    router.events.on('routeChangeComplete', handleRouteChange);
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
-    };
-  }, [router.events]);
+  //   router.events.on('routeChangeComplete', handleRouteChange);
+  //   return () => {
+  //     router.events.off('routeChangeComplete', handleRouteChange);
+  //   };
+  // }, [router.events]);
 
   return (
     <>
@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
 
-      <Script
+      {/* <Script
         strategy='afterInteractive'
         dangerouslySetInnerHTML={{
           __html: `
@@ -52,7 +52,7 @@ function MyApp({ Component, pageProps }) {
             fbq('init', ${fbq.FB_PIXEL_ID});
           `,
         }}
-      />
+      /> */}
 
       <Component {...pageProps} />
     </>
