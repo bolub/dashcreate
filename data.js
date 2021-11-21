@@ -33,7 +33,7 @@ const today = new Date(Date.now()).toLocaleDateString();
 
 let registrationExpired = false;
 
-if (today === '22/11/2021') {
+if (today === '29/11/2021') {
   registrationExpired = true;
 }
 
