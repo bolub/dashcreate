@@ -13,7 +13,7 @@ const Register = ({ setIsRegisterOpen }) => {
   const config = {
     reference: new Date().getTime(),
     email,
-    amount: 10000,
+    amount: 1000000,
     publicKey: process.env.NEXT_PUBLIC_PAYSTACK_KEY,
   };
 
@@ -45,19 +45,22 @@ const Register = ({ setIsRegisterOpen }) => {
     setStatus('loading');
 
     try {
-      await fetch(`https://submit-form.com/xQYtsFxa`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
-        body: JSON.stringify({
-          fullname,
-          email,
-          phoneNumber,
-          location,
-        }),
-      });
+      await fetch(
+        `https://submit-form.com/${process.env.NEXT_PUBLIC_FORM_ID}`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+          },
+          body: JSON.stringify({
+            fullname,
+            email,
+            phoneNumber,
+            location,
+          }),
+        }
+      );
 
       setStatus('success');
       setIsRegisterOpen(false);
