@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { useFormspark } from '@formspark/use-formspark';
 import Input from './Input';
 import { usePaystackPayment } from 'react-paystack';
 

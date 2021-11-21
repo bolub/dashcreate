@@ -65,7 +65,7 @@ export default function Home() {
 
       <Navbar />
 
-      <CountdownComp dateTime={'22 November, 2021'} />
+      <CountdownComp dateTime={'29 November, 2021'} />
 
       <header className='px-5 md:px-16 flex flex-col md:flex-row mt-12'>
         {/* Intro */}
@@ -205,7 +205,7 @@ export default function Home() {
               />
 
               <span className='font-bold ml-auto my-auto'>
-                Nov 22nd - Dec 4th
+                Nov 29th - Dec 4th
               </span>
             </div>
           </div>
