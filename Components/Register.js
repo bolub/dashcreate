@@ -13,7 +13,7 @@ const Register = ({ setIsRegisterOpen }) => {
   const config = {
     reference: new Date().getTime(),
     email,
-    amount: 10000,
+    amount: 1000000,
     publicKey: process.env.NEXT_PUBLIC_PAYSTACK_KEY,
   };
 
